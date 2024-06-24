@@ -9,7 +9,7 @@ function typeTableContent(elements) {
     });
 
     function typeContentIntoElement(element, callback) {
-        const content = element.getAttribute('data-content') || '';
+        const content = element.innerHTML || '';
         let text = '';
         let charIndex = 0;
         const typingSpeed = 25;
